@@ -1,16 +1,24 @@
 <template>
   <section class="cards-section">
-    <Cards v-for="n in 10" :key="n" />
+    <Card v-for="artist in artists" :key="artist.id" v-bind:artist="artist" />
   </section>
 </template>
 
 <script>
-import Cards from "./Cards";
+import Card from "./Card";
 
 export default {
   name: "CardSection",
   components: {
-    Cards
+    Card
+  },
+  data() {
+    return {};
+  },
+  computed: {
+    artists() {
+      return this.$store.getters.getArtists;
+    }
   }
 };
 </script>

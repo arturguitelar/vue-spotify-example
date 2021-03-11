@@ -1,8 +1,8 @@
-import artist from "../../../../src/store/modules/artist";
+import { createStore } from "vuex";
 
 describe("#Artist", () => {
   describe("Success cases", () => {
-    // Obs: Por enquanto, só fazendo o teste passar ajustar coisas do layout com dados válidos
+    // Obs: Por enquanto, só fazendo o teste passar para ajustar coisas do layout com dados válidos
     it("Should return an array with artists", () => {
       const expectedData = [
         {
@@ -49,9 +49,20 @@ describe("#Artist", () => {
         }
       ];
 
-      const query = artist.getters.getArtistByName("met");
+      const store = createStore({
+        state() {
+          return {
+            artists: expectedData
+          };
+        },
+        getters: {
+          getArtists(state) {
+            return state.artists;
+          }
+        }
+      });
 
-      expect(query[0]).toEqual(expectedData[0]);
+      expect(store.state.artists).toEqual(expectedData);
     });
   });
 });

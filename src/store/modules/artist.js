@@ -1,13 +1,31 @@
 // temporary
 import fake from "../fakeData";
 
+const state = {
+  artists: fake.artists.items
+};
+
 const getters = {
-  getArtistByName(name) {
-    const artists = fake.artists.items;
-    return artists;
+  getArtists(state) {
+    return state.artists;
+  }
+};
+
+const mutations = {
+  setArtists(state, data) {
+    state.artists = data;
+  }
+};
+
+const actions = {
+  getArtists({ /*getters,*/ commit }) {
+    commit("setArtists", fake.artists.items);
   }
 };
 
 export default {
-  getters
+  state,
+  getters,
+  mutations,
+  actions
 };
