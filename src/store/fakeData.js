@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 export default {
   artists: {
     href:
@@ -820,5 +821,1275 @@ export default {
     offset: 0,
     previous: null,
     total: 8303
+  },
+  "tracks": {
+    "href": "https://api.spotify.com/v1/search?query=Master&type=track&market=US&offset=5&limit=10",
+    "items": [
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/22bE4uQ6baNwSHPVcDxLCe"
+              },
+              "href": "https://api.spotify.com/v1/artists/22bE4uQ6baNwSHPVcDxLCe",
+              "id": "22bE4uQ6baNwSHPVcDxLCe",
+              "name": "The Rolling Stones",
+              "type": "artist",
+              "uri": "spotify:artist:22bE4uQ6baNwSHPVcDxLCe"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/15XNBzVWARPMlu0sEbfBjJ"
+          },
+          "href": "https://api.spotify.com/v1/albums/15XNBzVWARPMlu0sEbfBjJ",
+          "id": "15XNBzVWARPMlu0sEbfBjJ",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b27308fc42e575043a753f60d675",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e0208fc42e575043a753f60d675",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d0000485108fc42e575043a753f60d675",
+              "width": 64
+            }
+          ],
+          "name": "Tattoo You (2009 Re-Mastered)",
+          "release_date": "1981-08-24",
+          "release_date_precision": "day",
+          "total_tracks": 11,
+          "type": "album",
+          "uri": "spotify:album:15XNBzVWARPMlu0sEbfBjJ"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/22bE4uQ6baNwSHPVcDxLCe"
+            },
+            "href": "https://api.spotify.com/v1/artists/22bE4uQ6baNwSHPVcDxLCe",
+            "id": "22bE4uQ6baNwSHPVcDxLCe",
+            "name": "The Rolling Stones",
+            "type": "artist",
+            "uri": "spotify:artist:22bE4uQ6baNwSHPVcDxLCe"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 213066,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "GBUM70909474"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/7HKez549fwJQDzx3zLjHKC"
+        },
+        "href": "https://api.spotify.com/v1/tracks/7HKez549fwJQDzx3zLjHKC",
+        "id": "7HKez549fwJQDzx3zLjHKC",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Start Me Up - Remastered",
+        "popularity": 76,
+        "preview_url": null,
+        "track_number": 1,
+        "type": "track",
+        "uri": "spotify:track:7HKez549fwJQDzx3zLjHKC"
+      },
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/56ZTgzPBDge0OvCGgMO3OY"
+              },
+              "href": "https://api.spotify.com/v1/artists/56ZTgzPBDge0OvCGgMO3OY",
+              "id": "56ZTgzPBDge0OvCGgMO3OY",
+              "name": "Beach House",
+              "type": "artist",
+              "uri": "spotify:artist:56ZTgzPBDge0OvCGgMO3OY"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/32bJgeIOAFiNkucTCje5O5"
+          },
+          "href": "https://api.spotify.com/v1/albums/32bJgeIOAFiNkucTCje5O5",
+          "id": "32bJgeIOAFiNkucTCje5O5",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b27372c5265c12fd8effdc006b75",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e0272c5265c12fd8effdc006b75",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d0000485172c5265c12fd8effdc006b75",
+              "width": 64
+            }
+          ],
+          "name": "Beach House",
+          "release_date": "2006-10-03",
+          "release_date_precision": "day",
+          "total_tracks": 9,
+          "type": "album",
+          "uri": "spotify:album:32bJgeIOAFiNkucTCje5O5"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/56ZTgzPBDge0OvCGgMO3OY"
+            },
+            "href": "https://api.spotify.com/v1/artists/56ZTgzPBDge0OvCGgMO3OY",
+            "id": "56ZTgzPBDge0OvCGgMO3OY",
+            "name": "Beach House",
+            "type": "artist",
+            "uri": "spotify:artist:56ZTgzPBDge0OvCGgMO3OY"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 199413,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "US22N0503504"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/3stWWPN41byqp8loPdy92u"
+        },
+        "href": "https://api.spotify.com/v1/tracks/3stWWPN41byqp8loPdy92u",
+        "id": "3stWWPN41byqp8loPdy92u",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Master of None",
+        "popularity": 61,
+        "preview_url": "https://p.scdn.co/mp3-preview/3d49ee47dd3e09992e9faa620024f269232d4d35?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 4,
+        "type": "track",
+        "uri": "spotify:track:3stWWPN41byqp8loPdy92u"
+      },
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/2DlGxzQSjYe5N6G9nkYghR"
+              },
+              "href": "https://api.spotify.com/v1/artists/2DlGxzQSjYe5N6G9nkYghR",
+              "id": "2DlGxzQSjYe5N6G9nkYghR",
+              "name": "Jennifer Lopez",
+              "type": "artist",
+              "uri": "spotify:artist:2DlGxzQSjYe5N6G9nkYghR"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/2NG4OLyeNMwcLqirwwwvs2"
+          },
+          "href": "https://api.spotify.com/v1/albums/2NG4OLyeNMwcLqirwwwvs2",
+          "id": "2NG4OLyeNMwcLqirwwwvs2",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273a33bca43fe421d8b34ba73d4",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02a33bca43fe421d8b34ba73d4",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851a33bca43fe421d8b34ba73d4",
+              "width": 64
+            }
+          ],
+          "name": "This Is Me...Then",
+          "release_date": "2002-11-19",
+          "release_date_precision": "day",
+          "total_tracks": 12,
+          "type": "album",
+          "uri": "spotify:album:2NG4OLyeNMwcLqirwwwvs2"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/2DlGxzQSjYe5N6G9nkYghR"
+            },
+            "href": "https://api.spotify.com/v1/artists/2DlGxzQSjYe5N6G9nkYghR",
+            "id": "2DlGxzQSjYe5N6G9nkYghR",
+            "name": "Jennifer Lopez",
+            "type": "artist",
+            "uri": "spotify:artist:2DlGxzQSjYe5N6G9nkYghR"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/5pnbUBPifNnlusY8kTBivi"
+            },
+            "href": "https://api.spotify.com/v1/artists/5pnbUBPifNnlusY8kTBivi",
+            "id": "5pnbUBPifNnlusY8kTBivi",
+            "name": "Jadakiss",
+            "type": "artist",
+            "uri": "spotify:artist:5pnbUBPifNnlusY8kTBivi"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/2x8KDZdSONA3872CnhaAlX"
+            },
+            "href": "https://api.spotify.com/v1/artists/2x8KDZdSONA3872CnhaAlX",
+            "id": "2x8KDZdSONA3872CnhaAlX",
+            "name": "Styles P",
+            "type": "artist",
+            "uri": "spotify:artist:2x8KDZdSONA3872CnhaAlX"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 187840,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "USSM10212454"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/4ZOyH6KjomjlqCz3oFqglr"
+        },
+        "href": "https://api.spotify.com/v1/tracks/4ZOyH6KjomjlqCz3oFqglr",
+        "id": "4ZOyH6KjomjlqCz3oFqglr",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Jenny from the Block (feat. Jadakiss & Styles P.) - Track Masters Remix",
+        "popularity": 66,
+        "preview_url": "https://p.scdn.co/mp3-preview/63b07ee2a77f0f18603dfca450314c4957af7795?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 7,
+        "type": "track",
+        "uri": "spotify:track:4ZOyH6KjomjlqCz3oFqglr"
+      },
+      {
+        "album": {
+          "album_type": "single",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/7Gz6VlTVwlNtBNMYV4OI3w"
+              },
+              "href": "https://api.spotify.com/v1/artists/7Gz6VlTVwlNtBNMYV4OI3w",
+              "id": "7Gz6VlTVwlNtBNMYV4OI3w",
+              "name": "Shotgun Willy",
+              "type": "artist",
+              "uri": "spotify:artist:7Gz6VlTVwlNtBNMYV4OI3w"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/5e3skNe2FPVLGrEKP3qbju"
+          },
+          "href": "https://api.spotify.com/v1/albums/5e3skNe2FPVLGrEKP3qbju",
+          "id": "5e3skNe2FPVLGrEKP3qbju",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273c045d086fc7643cd527abf5d",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02c045d086fc7643cd527abf5d",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851c045d086fc7643cd527abf5d",
+              "width": 64
+            }
+          ],
+          "name": "Willy the Kid",
+          "release_date": "2019-03-08",
+          "release_date_precision": "day",
+          "total_tracks": 3,
+          "type": "album",
+          "uri": "spotify:album:5e3skNe2FPVLGrEKP3qbju"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/7Gz6VlTVwlNtBNMYV4OI3w"
+            },
+            "href": "https://api.spotify.com/v1/artists/7Gz6VlTVwlNtBNMYV4OI3w",
+            "id": "7Gz6VlTVwlNtBNMYV4OI3w",
+            "name": "Shotgun Willy",
+            "type": "artist",
+            "uri": "spotify:artist:7Gz6VlTVwlNtBNMYV4OI3w"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 156845,
+        "explicit": true,
+        "external_ids": {
+          "isrc": "TCAEC1967654"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/4vewD7EZL4NELL98l8ys5A"
+        },
+        "href": "https://api.spotify.com/v1/tracks/4vewD7EZL4NELL98l8ys5A",
+        "id": "4vewD7EZL4NELL98l8ys5A",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Master Sword",
+        "popularity": 63,
+        "preview_url": "https://p.scdn.co/mp3-preview/25f15b7edcb88853aaa8866d4999e0f85b71e12d?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 3,
+        "type": "track",
+        "uri": "spotify:track:4vewD7EZL4NELL98l8ys5A"
+      },
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/5QdyldG4Fl4TPiOIeMNpBZ"
+              },
+              "href": "https://api.spotify.com/v1/artists/5QdyldG4Fl4TPiOIeMNpBZ",
+              "id": "5QdyldG4Fl4TPiOIeMNpBZ",
+              "name": "Big Thief",
+              "type": "artist",
+              "uri": "spotify:artist:5QdyldG4Fl4TPiOIeMNpBZ"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/4onPyHor2yOlVxCsIaGyHH"
+          },
+          "href": "https://api.spotify.com/v1/albums/4onPyHor2yOlVxCsIaGyHH",
+          "id": "4onPyHor2yOlVxCsIaGyHH",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b2737c489be841df6272caed47e9",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e027c489be841df6272caed47e9",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d000048517c489be841df6272caed47e9",
+              "width": 64
+            }
+          ],
+          "name": "Masterpiece",
+          "release_date": "2016-05-27",
+          "release_date_precision": "day",
+          "total_tracks": 12,
+          "type": "album",
+          "uri": "spotify:album:4onPyHor2yOlVxCsIaGyHH"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/5QdyldG4Fl4TPiOIeMNpBZ"
+            },
+            "href": "https://api.spotify.com/v1/artists/5QdyldG4Fl4TPiOIeMNpBZ",
+            "id": "5QdyldG4Fl4TPiOIeMNpBZ",
+            "name": "Big Thief",
+            "type": "artist",
+            "uri": "spotify:artist:5QdyldG4Fl4TPiOIeMNpBZ"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 230586,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "US2U61623302"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/2WTxIQ0ufU7AxT43ZKpllY"
+        },
+        "href": "https://api.spotify.com/v1/tracks/2WTxIQ0ufU7AxT43ZKpllY",
+        "id": "2WTxIQ0ufU7AxT43ZKpllY",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Masterpiece",
+        "popularity": 57,
+        "preview_url": "https://p.scdn.co/mp3-preview/d2867cdd98a2e8737f005417aabd4a60f473235c?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 2,
+        "type": "track",
+        "uri": "spotify:track:2WTxIQ0ufU7AxT43ZKpllY"
+      },
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/7hJcb9fa4alzcOq3EaNPoG"
+              },
+              "href": "https://api.spotify.com/v1/artists/7hJcb9fa4alzcOq3EaNPoG",
+              "id": "7hJcb9fa4alzcOq3EaNPoG",
+              "name": "Snoop Dogg",
+              "type": "artist",
+              "uri": "spotify:artist:7hJcb9fa4alzcOq3EaNPoG"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/797fkvAtk0iZvP1HHPCWbp"
+          },
+          "href": "https://api.spotify.com/v1/albums/797fkvAtk0iZvP1HHPCWbp",
+          "id": "797fkvAtk0iZvP1HHPCWbp",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273e803716268c173c3f9a0c057",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02e803716268c173c3f9a0c057",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851e803716268c173c3f9a0c057",
+              "width": 64
+            }
+          ],
+          "name": "R&G (Rhythm & Gangsta): The Masterpiece",
+          "release_date": "2004-01-01",
+          "release_date_precision": "day",
+          "total_tracks": 20,
+          "type": "album",
+          "uri": "spotify:album:797fkvAtk0iZvP1HHPCWbp"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/7hJcb9fa4alzcOq3EaNPoG"
+            },
+            "href": "https://api.spotify.com/v1/artists/7hJcb9fa4alzcOq3EaNPoG",
+            "id": "7hJcb9fa4alzcOq3EaNPoG",
+            "name": "Snoop Dogg",
+            "type": "artist",
+            "uri": "spotify:artist:7hJcb9fa4alzcOq3EaNPoG"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/2RdwBSPQiwcmiDo9kixcl8"
+            },
+            "href": "https://api.spotify.com/v1/artists/2RdwBSPQiwcmiDo9kixcl8",
+            "id": "2RdwBSPQiwcmiDo9kixcl8",
+            "name": "Pharrell Williams",
+            "type": "artist",
+            "uri": "spotify:artist:2RdwBSPQiwcmiDo9kixcl8"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 266066,
+        "explicit": true,
+        "external_ids": {
+          "isrc": "USMC10400640"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/2NBQmPrOEEjA8VbeWOQGxO"
+        },
+        "href": "https://api.spotify.com/v1/tracks/2NBQmPrOEEjA8VbeWOQGxO",
+        "id": "2NBQmPrOEEjA8VbeWOQGxO",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Drop It Like It's Hot",
+        "popularity": 67,
+        "preview_url": null,
+        "track_number": 3,
+        "type": "track",
+        "uri": "spotify:track:2NBQmPrOEEjA8VbeWOQGxO"
+      },
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+              },
+              "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+              "id": "0LyfQWJT6nXafLPZqxe9Of",
+              "name": "Vários intérpretes",
+              "type": "artist",
+              "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/0xGAMDZSY85dgIMKootA0t"
+          },
+          "href": "https://api.spotify.com/v1/albums/0xGAMDZSY85dgIMKootA0t",
+          "id": "0xGAMDZSY85dgIMKootA0t",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b27305c4365f61424032b10c4411",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e0205c4365f61424032b10c4411",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d0000485105c4365f61424032b10c4411",
+              "width": 64
+            }
+          ],
+          "name": "SENGOKU BASARA Ongaku Emaki ~Aoban It's Show Time~",
+          "release_date": "2021-03-10",
+          "release_date_precision": "day",
+          "total_tracks": 23,
+          "type": "album",
+          "uri": "spotify:album:0xGAMDZSY85dgIMKootA0t"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/0Riv2KnFcLZA3JSVryRg4y"
+            },
+            "href": "https://api.spotify.com/v1/artists/0Riv2KnFcLZA3JSVryRg4y",
+            "id": "0Riv2KnFcLZA3JSVryRg4y",
+            "name": "Hiroyuki Sawano",
+            "type": "artist",
+            "uri": "spotify:artist:0Riv2KnFcLZA3JSVryRg4y"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 104840,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "JPG750900275"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/5L9VBK86zCWIRINa1o905j"
+        },
+        "href": "https://api.spotify.com/v1/tracks/5L9VBK86zCWIRINa1o905j",
+        "id": "5L9VBK86zCWIRINa1o905j",
+        "is_local": false,
+        "is_playable": true,
+        "name": "mastermind",
+        "popularity": 0,
+        "preview_url": "https://p.scdn.co/mp3-preview/909cbbf3d6b78b5c95d65af24e713566fd4ee8e2?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 12,
+        "type": "track",
+        "uri": "spotify:track:5L9VBK86zCWIRINa1o905j"
+      },
+      {
+        "album": {
+          "album_type": "compilation",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/1TqQi97nqeiuOJrIFv5Sw0"
+              },
+              "href": "https://api.spotify.com/v1/artists/1TqQi97nqeiuOJrIFv5Sw0",
+              "id": "1TqQi97nqeiuOJrIFv5Sw0",
+              "name": "Semisonic",
+              "type": "artist",
+              "uri": "spotify:artist:1TqQi97nqeiuOJrIFv5Sw0"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/4JDBx5wQ82jb8PjLYPBP8L"
+          },
+          "href": "https://api.spotify.com/v1/albums/4JDBx5wQ82jb8PjLYPBP8L",
+          "id": "4JDBx5wQ82jb8PjLYPBP8L",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273dec0d479b10bccff532074ed",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02dec0d479b10bccff532074ed",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851dec0d479b10bccff532074ed",
+              "width": 64
+            }
+          ],
+          "name": "20th Century Masters: The Millennium Collection: Best Of Semisonic",
+          "release_date": "2003-01-01",
+          "release_date_precision": "day",
+          "total_tracks": 12,
+          "type": "album",
+          "uri": "spotify:album:4JDBx5wQ82jb8PjLYPBP8L"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/1TqQi97nqeiuOJrIFv5Sw0"
+            },
+            "href": "https://api.spotify.com/v1/artists/1TqQi97nqeiuOJrIFv5Sw0",
+            "id": "1TqQi97nqeiuOJrIFv5Sw0",
+            "name": "Semisonic",
+            "type": "artist",
+            "uri": "spotify:artist:1TqQi97nqeiuOJrIFv5Sw0"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 274160,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "USMC19800013"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/1A5V1sxyCLpKJezp75tUXn"
+        },
+        "href": "https://api.spotify.com/v1/tracks/1A5V1sxyCLpKJezp75tUXn",
+        "id": "1A5V1sxyCLpKJezp75tUXn",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Closing Time",
+        "popularity": 69,
+        "preview_url": null,
+        "track_number": 1,
+        "type": "track",
+        "uri": "spotify:track:1A5V1sxyCLpKJezp75tUXn"
+      },
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/2efzHZrUGhawnSOTpyAHOQ"
+              },
+              "href": "https://api.spotify.com/v1/artists/2efzHZrUGhawnSOTpyAHOQ",
+              "id": "2efzHZrUGhawnSOTpyAHOQ",
+              "name": "Deltron 3030",
+              "type": "artist",
+              "uri": "spotify:artist:2efzHZrUGhawnSOTpyAHOQ"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/04uhhcjGVCHodMgZjXOlye"
+          },
+          "href": "https://api.spotify.com/v1/albums/04uhhcjGVCHodMgZjXOlye",
+          "id": "04uhhcjGVCHodMgZjXOlye",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273210c8f856757abec0806209c",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02210c8f856757abec0806209c",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851210c8f856757abec0806209c",
+              "width": 64
+            }
+          ],
+          "name": "Deltron 3030",
+          "release_date": "2000",
+          "release_date_precision": "year",
+          "total_tracks": 24,
+          "type": "album",
+          "uri": "spotify:album:04uhhcjGVCHodMgZjXOlye"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/2efzHZrUGhawnSOTpyAHOQ"
+            },
+            "href": "https://api.spotify.com/v1/artists/2efzHZrUGhawnSOTpyAHOQ",
+            "id": "2efzHZrUGhawnSOTpyAHOQ",
+            "name": "Deltron 3030",
+            "type": "artist",
+            "uri": "spotify:artist:2efzHZrUGhawnSOTpyAHOQ"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/0YsLR3SQd5QTXAhGIGX7cl"
+            },
+            "href": "https://api.spotify.com/v1/artists/0YsLR3SQd5QTXAhGIGX7cl",
+            "id": "0YsLR3SQd5QTXAhGIGX7cl",
+            "name": "Del The Funky Homosapien",
+            "type": "artist",
+            "uri": "spotify:artist:0YsLR3SQd5QTXAhGIGX7cl"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/4fv5w0LJib9OMbXQegqZ01"
+            },
+            "href": "https://api.spotify.com/v1/artists/4fv5w0LJib9OMbXQegqZ01",
+            "id": "4fv5w0LJib9OMbXQegqZ01",
+            "name": "Dan The Automator",
+            "type": "artist",
+            "uri": "spotify:artist:4fv5w0LJib9OMbXQegqZ01"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/2s0438sn0pYL2OuukcFqPN"
+            },
+            "href": "https://api.spotify.com/v1/artists/2s0438sn0pYL2OuukcFqPN",
+            "id": "2s0438sn0pYL2OuukcFqPN",
+            "name": "Kid Koala",
+            "type": "artist",
+            "uri": "spotify:artist:2s0438sn0pYL2OuukcFqPN"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 214306,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "US25T0892641"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/0uMn8WKu3qtQLaUyal1bsz"
+        },
+        "href": "https://api.spotify.com/v1/tracks/0uMn8WKu3qtQLaUyal1bsz",
+        "id": "0uMn8WKu3qtQLaUyal1bsz",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Mastermind",
+        "popularity": 54,
+        "preview_url": "https://p.scdn.co/mp3-preview/28c9915b6de2303a6d7bf82c066b292eaa122856?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 10,
+        "type": "track",
+        "uri": "spotify:track:0uMn8WKu3qtQLaUyal1bsz"
+      },
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/2gsggkzM5R49q6jpPvazou"
+              },
+              "href": "https://api.spotify.com/v1/artists/2gsggkzM5R49q6jpPvazou",
+              "id": "2gsggkzM5R49q6jpPvazou",
+              "name": "Jessie J",
+              "type": "artist",
+              "uri": "spotify:artist:2gsggkzM5R49q6jpPvazou"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/2rDIivxBafNKpgRqlzIRSb"
+          },
+          "href": "https://api.spotify.com/v1/albums/2rDIivxBafNKpgRqlzIRSb",
+          "id": "2rDIivxBafNKpgRqlzIRSb",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273930f686fe89425c7b6bf9a7d",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02930f686fe89425c7b6bf9a7d",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851930f686fe89425c7b6bf9a7d",
+              "width": 64
+            }
+          ],
+          "name": "Sweet Talker (Deluxe Version)",
+          "release_date": "2014-10-14",
+          "release_date_precision": "day",
+          "total_tracks": 15,
+          "type": "album",
+          "uri": "spotify:album:2rDIivxBafNKpgRqlzIRSb"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/2gsggkzM5R49q6jpPvazou"
+            },
+            "href": "https://api.spotify.com/v1/artists/2gsggkzM5R49q6jpPvazou",
+            "id": "2gsggkzM5R49q6jpPvazou",
+            "name": "Jessie J",
+            "type": "artist",
+            "uri": "spotify:artist:2gsggkzM5R49q6jpPvazou"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 220653,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "USUM71412828"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/4PYiIgzcp4o5pEYji1xY9q"
+        },
+        "href": "https://api.spotify.com/v1/tracks/4PYiIgzcp4o5pEYji1xY9q",
+        "id": "4PYiIgzcp4o5pEYji1xY9q",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Masterpiece",
+        "popularity": 62,
+        "preview_url": null,
+        "track_number": 7,
+        "type": "track",
+        "uri": "spotify:track:4PYiIgzcp4o5pEYji1xY9q"
+      }
+    ],
+    "limit": 10,
+    "next": "https://api.spotify.com/v1/search?query=Master&type=track&market=US&offset=15&limit=10",
+    "offset": 5,
+    "previous": "https://api.spotify.com/v1/search?query=Master&type=track&market=US&offset=0&limit=10",
+    "total": 250008
+  },
+  "albums": {
+    "href": "https://api.spotify.com/v1/search?query=Master&type=album&market=US&offset=5&limit=10",
+    "items": [
+      {
+        "album_type": "album",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/22bE4uQ6baNwSHPVcDxLCe"
+            },
+            "href": "https://api.spotify.com/v1/artists/22bE4uQ6baNwSHPVcDxLCe",
+            "id": "22bE4uQ6baNwSHPVcDxLCe",
+            "name": "The Rolling Stones",
+            "type": "artist",
+            "uri": "spotify:artist:22bE4uQ6baNwSHPVcDxLCe"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/15XNBzVWARPMlu0sEbfBjJ"
+        },
+        "href": "https://api.spotify.com/v1/albums/15XNBzVWARPMlu0sEbfBjJ",
+        "id": "15XNBzVWARPMlu0sEbfBjJ",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b27308fc42e575043a753f60d675",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/ab67616d00001e0208fc42e575043a753f60d675",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/ab67616d0000485108fc42e575043a753f60d675",
+            "width": 64
+          }
+        ],
+        "name": "Tattoo You (2009 Re-Mastered)",
+        "release_date": "1981-08-24",
+        "release_date_precision": "day",
+        "total_tracks": 11,
+        "type": "album",
+        "uri": "spotify:album:15XNBzVWARPMlu0sEbfBjJ"
+      },
+      {
+        "album_type": "album",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/1sBkRIssrMs1AbVkOJbc7a"
+            },
+            "href": "https://api.spotify.com/v1/artists/1sBkRIssrMs1AbVkOJbc7a",
+            "id": "1sBkRIssrMs1AbVkOJbc7a",
+            "name": "Rick Ross",
+            "type": "artist",
+            "uri": "spotify:artist:1sBkRIssrMs1AbVkOJbc7a"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/6a4HHZe13SySfC50BGy8Hm"
+        },
+        "href": "https://api.spotify.com/v1/albums/6a4HHZe13SySfC50BGy8Hm",
+        "id": "6a4HHZe13SySfC50BGy8Hm",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b27304913584f114904f7646d637",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/ab67616d00001e0204913584f114904f7646d637",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/ab67616d0000485104913584f114904f7646d637",
+            "width": 64
+          }
+        ],
+        "name": "Mastermind (Deluxe)",
+        "release_date": "2014-01-01",
+        "release_date_precision": "day",
+        "total_tracks": 19,
+        "type": "album",
+        "uri": "spotify:album:6a4HHZe13SySfC50BGy8Hm"
+      },
+      {
+        "album_type": "album",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/7hJcb9fa4alzcOq3EaNPoG"
+            },
+            "href": "https://api.spotify.com/v1/artists/7hJcb9fa4alzcOq3EaNPoG",
+            "id": "7hJcb9fa4alzcOq3EaNPoG",
+            "name": "Snoop Dogg",
+            "type": "artist",
+            "uri": "spotify:artist:7hJcb9fa4alzcOq3EaNPoG"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/797fkvAtk0iZvP1HHPCWbp"
+        },
+        "href": "https://api.spotify.com/v1/albums/797fkvAtk0iZvP1HHPCWbp",
+        "id": "797fkvAtk0iZvP1HHPCWbp",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b273e803716268c173c3f9a0c057",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/ab67616d00001e02e803716268c173c3f9a0c057",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/ab67616d00004851e803716268c173c3f9a0c057",
+            "width": 64
+          }
+        ],
+        "name": "R&G (Rhythm & Gangsta): The Masterpiece",
+        "release_date": "2004-01-01",
+        "release_date_precision": "day",
+        "total_tracks": 20,
+        "type": "album",
+        "uri": "spotify:album:797fkvAtk0iZvP1HHPCWbp"
+      },
+      {
+        "album_type": "album",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/7wlFDEWiM5OoIAt8RSli8b"
+            },
+            "href": "https://api.spotify.com/v1/artists/7wlFDEWiM5OoIAt8RSli8b",
+            "id": "7wlFDEWiM5OoIAt8RSli8b",
+            "name": "YoungBoy Never Broke Again",
+            "type": "artist",
+            "uri": "spotify:artist:7wlFDEWiM5OoIAt8RSli8b"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/3rNf2SErEqCBoyHVYEDNU9"
+        },
+        "href": "https://api.spotify.com/v1/albums/3rNf2SErEqCBoyHVYEDNU9",
+        "id": "3rNf2SErEqCBoyHVYEDNU9",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b273b233d2825cdec369a4b0cb00",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/ab67616d00001e02b233d2825cdec369a4b0cb00",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/ab67616d00004851b233d2825cdec369a4b0cb00",
+            "width": 64
+          }
+        ],
+        "name": "Master the Day of Judgement",
+        "release_date": "2018-06-15",
+        "release_date_precision": "day",
+        "total_tracks": 8,
+        "type": "album",
+        "uri": "spotify:album:3rNf2SErEqCBoyHVYEDNU9"
+      },
+      {
+        "album_type": "album",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/3jFjgKOGfVLWfXX8q5wrsg"
+            },
+            "href": "https://api.spotify.com/v1/artists/3jFjgKOGfVLWfXX8q5wrsg",
+            "id": "3jFjgKOGfVLWfXX8q5wrsg",
+            "name": "R.K.M & Ken-Y",
+            "type": "artist",
+            "uri": "spotify:artist:3jFjgKOGfVLWfXX8q5wrsg"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/7CpmPDrPfeDnR4ykfM7OYE"
+        },
+        "href": "https://api.spotify.com/v1/albums/7CpmPDrPfeDnR4ykfM7OYE",
+        "id": "7CpmPDrPfeDnR4ykfM7OYE",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b273714a625bc59a6c96a067d329",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/ab67616d00001e02714a625bc59a6c96a067d329",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/ab67616d00004851714a625bc59a6c96a067d329",
+            "width": 64
+          }
+        ],
+        "name": "Masterpiece: Nuestra Obra Maestra",
+        "release_date": "2016-11-04",
+        "release_date_precision": "day",
+        "total_tracks": 16,
+        "type": "album",
+        "uri": "spotify:album:7CpmPDrPfeDnR4ykfM7OYE"
+      },
+      {
+        "album_type": "compilation",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/1TqQi97nqeiuOJrIFv5Sw0"
+            },
+            "href": "https://api.spotify.com/v1/artists/1TqQi97nqeiuOJrIFv5Sw0",
+            "id": "1TqQi97nqeiuOJrIFv5Sw0",
+            "name": "Semisonic",
+            "type": "artist",
+            "uri": "spotify:artist:1TqQi97nqeiuOJrIFv5Sw0"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/4JDBx5wQ82jb8PjLYPBP8L"
+        },
+        "href": "https://api.spotify.com/v1/albums/4JDBx5wQ82jb8PjLYPBP8L",
+        "id": "4JDBx5wQ82jb8PjLYPBP8L",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b273dec0d479b10bccff532074ed",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/ab67616d00001e02dec0d479b10bccff532074ed",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/ab67616d00004851dec0d479b10bccff532074ed",
+            "width": 64
+          }
+        ],
+        "name": "20th Century Masters: The Millennium Collection: Best Of Semisonic",
+        "release_date": "2003-01-01",
+        "release_date_precision": "day",
+        "total_tracks": 12,
+        "type": "album",
+        "uri": "spotify:album:4JDBx5wQ82jb8PjLYPBP8L"
+      },
+      {
+        "album_type": "album",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/7HO5fOXE4gh3lzZn64tX2E"
+            },
+            "href": "https://api.spotify.com/v1/artists/7HO5fOXE4gh3lzZn64tX2E",
+            "id": "7HO5fOXE4gh3lzZn64tX2E",
+            "name": "Mariah the Scientist",
+            "type": "artist",
+            "uri": "spotify:artist:7HO5fOXE4gh3lzZn64tX2E"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/3WUKQFrLXnp2zeGcJyygkT"
+        },
+        "href": "https://api.spotify.com/v1/albums/3WUKQFrLXnp2zeGcJyygkT",
+        "id": "3WUKQFrLXnp2zeGcJyygkT",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b273ae28b0f9438eb50d3246f361",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/ab67616d00001e02ae28b0f9438eb50d3246f361",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/ab67616d00004851ae28b0f9438eb50d3246f361",
+            "width": 64
+          }
+        ],
+        "name": "MASTER",
+        "release_date": "2019-08-23",
+        "release_date_precision": "day",
+        "total_tracks": 10,
+        "type": "album",
+        "uri": "spotify:album:3WUKQFrLXnp2zeGcJyygkT"
+      },
+      {
+        "album_type": "album",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6Jrxnp0JgqmeUX1veU591p"
+            },
+            "href": "https://api.spotify.com/v1/artists/6Jrxnp0JgqmeUX1veU591p",
+            "id": "6Jrxnp0JgqmeUX1veU591p",
+            "name": "Santigold",
+            "type": "artist",
+            "uri": "spotify:artist:6Jrxnp0JgqmeUX1veU591p"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/58ZjpgafuBeQ0JVxIt0hdr"
+        },
+        "href": "https://api.spotify.com/v1/albums/58ZjpgafuBeQ0JVxIt0hdr",
+        "id": "58ZjpgafuBeQ0JVxIt0hdr",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b2731df652eb00ae939358d8f3b1",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/ab67616d00001e021df652eb00ae939358d8f3b1",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/ab67616d000048511df652eb00ae939358d8f3b1",
+            "width": 64
+          }
+        ],
+        "name": "Master of My Make-Believe",
+        "release_date": "2012-04-21",
+        "release_date_precision": "day",
+        "total_tracks": 11,
+        "type": "album",
+        "uri": "spotify:album:58ZjpgafuBeQ0JVxIt0hdr"
+      },
+      {
+        "album_type": "album",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/2ye2Wgw4gimLv2eAKyk1NB"
+            },
+            "href": "https://api.spotify.com/v1/artists/2ye2Wgw4gimLv2eAKyk1NB",
+            "id": "2ye2Wgw4gimLv2eAKyk1NB",
+            "name": "Metallica",
+            "type": "artist",
+            "uri": "spotify:artist:2ye2Wgw4gimLv2eAKyk1NB"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/5gzLOflH95LkKYE6XSXE9k"
+        },
+        "href": "https://api.spotify.com/v1/albums/5gzLOflH95LkKYE6XSXE9k",
+        "id": "5gzLOflH95LkKYE6XSXE9k",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b2732127e0afac383fb73d533a7d",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/ab67616d00001e022127e0afac383fb73d533a7d",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/ab67616d000048512127e0afac383fb73d533a7d",
+            "width": 64
+          }
+        ],
+        "name": "Master of Puppets (Remastered)",
+        "release_date": "1986-03-03",
+        "release_date_precision": "day",
+        "total_tracks": 8,
+        "type": "album",
+        "uri": "spotify:album:5gzLOflH95LkKYE6XSXE9k"
+      },
+      {
+        "album_type": "compilation",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6V6WCgi7waF55bJmylC4H5"
+            },
+            "href": "https://api.spotify.com/v1/artists/6V6WCgi7waF55bJmylC4H5",
+            "id": "6V6WCgi7waF55bJmylC4H5",
+            "name": "Gloria Gaynor",
+            "type": "artist",
+            "uri": "spotify:artist:6V6WCgi7waF55bJmylC4H5"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/2BU2SNYoIPtZvGEJckdIhx"
+        },
+        "href": "https://api.spotify.com/v1/albums/2BU2SNYoIPtZvGEJckdIhx",
+        "id": "2BU2SNYoIPtZvGEJckdIhx",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b273a6479db910d22f5aa4546af1",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/ab67616d00001e02a6479db910d22f5aa4546af1",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/ab67616d00004851a6479db910d22f5aa4546af1",
+            "width": 64
+          }
+        ],
+        "name": "20th Century Masters: The Millennium Collection: Best Of Gloria Gaynor",
+        "release_date": "2000-01-01",
+        "release_date_precision": "day",
+        "total_tracks": 12,
+        "type": "album",
+        "uri": "spotify:album:2BU2SNYoIPtZvGEJckdIhx"
+      }
+    ],
+    "limit": 10,
+    "next": "https://api.spotify.com/v1/search?query=Master&type=album&market=US&offset=15&limit=10",
+    "offset": 5,
+    "previous": "https://api.spotify.com/v1/search?query=Master&type=album&market=US&offset=0&limit=10",
+    "total": 10008
   }
 };

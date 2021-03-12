@@ -2,7 +2,9 @@
 import fake from "../fakeData";
 
 const state = {
-  artists: fake.artists.items
+  artists: fake.artists.items,
+  tracks: fake.tracks.items,
+  albums: fake.albums.items
 };
 
 const getters = {

@@ -2,7 +2,9 @@
 
 An example of application with Vue.js and Spotify API.
 
-## Project setup
+## Project for study purposes. In progress...
+
+## Project setup (vue basics)
 
 ```
 npm install
@@ -24,6 +26,12 @@ npm run build
 
 ```
 npm run test:unit
+```
+
+### Run your unit tests with jest watch
+
+```
+npm run test:unit:w
 ```
 
 ### Lints and fixes files
