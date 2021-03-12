@@ -2,10 +2,8 @@
   <Header />
   <main class="main">
     <div class="container">
-
-      <h2>Tracks</h2>
-      
-      <CardSection />
+      <h2>Músicas</h2>
+      <CardSection page="tracks" />
     </div>
   </main>
   <Footer />

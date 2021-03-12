@@ -2,9 +2,8 @@
   <Header />
   <main class="main">
     <div class="container">
-
-      <h2>Albums</h2>
-      <CardSection />
+      <h2>Álbums</h2>
+      <CardSection page="albums" />
     </div>
   </main>
   <Footer />
