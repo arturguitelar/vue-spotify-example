@@ -1,4 +1,8 @@
 <template>
+  <!-- <div id="nav">
+    <router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link>
+  </div> -->
   <Header />
   <main class="main">
     <div class="container">
@@ -6,6 +10,7 @@
     </div>
   </main>
   <Footer />
+  <!-- <router-view /> -->
 </template>
 
 <script>
