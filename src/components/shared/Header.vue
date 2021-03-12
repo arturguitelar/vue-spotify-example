@@ -11,6 +11,13 @@
         <button class="search-btn">O-</button>
       </div>
       <nav class="filters">
+
+        <!-- TODO: fazer os links funfarem -->
+        <!-- <div id="nav">
+          <router-link to="/">Home</router-link> |
+          <router-link to="/about">About</router-link>
+        </div> -->
+
         <ul>
           <li><a class="active" href="#">Artista</a></li>
           <li><a href="#">Album</a></li>
