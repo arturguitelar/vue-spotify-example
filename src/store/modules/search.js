@@ -2,9 +2,9 @@
 import fake from "../fakeData";
 
 const state = {
-  artists: fake.artists.items,
-  albums: fake.albums.items,
-  tracks: fake.tracks.items
+  artists: [],
+  albums: [],
+  tracks: []
 };
 
 const getters = {
@@ -32,14 +32,45 @@ const mutations = {
 };
 
 const actions = {
-  getArtists({ /*getters,*/ commit }) {
-    commit("setArtists", fake.artists.items);
+  getArtists({ commit }) {
+    const artists = fake.artists.items;
+
+    const newArtists = artists.map(artist => {
+      return {
+        name: artist.name,
+        imageUrl: artist.images[0].url,
+        genres: artist.genres,
+        popularity: artist.popularity
+      };
+    });
+
+    commit("setArtists", newArtists);
   },
   getAlbums({ /*getters,*/ commit }) {
-    commit("setAlbums", fake.albums.items);
+    const albums = fake.albums.items;
+
+    const newAlbums = albums.map(album => {
+      return {
+        name: album.name,
+        imageUrl: album.images[0].url,
+        artist: album.artists[0].name
+      };
+    });
+
+    commit("setAlbums", newAlbums);
   },
   getTracks({ /*getters,*/ commit }) {
-    commit("setTracks", fake.tracks.items);
+    const tracks = fake.tracks.items;
+
+    const newTracks = tracks.map(track => {
+      return {
+        name: track.name,
+        imageUrl: track.album.images[0].url,
+        artist: track.album.artists[0].name
+      };
+    });
+
+    commit("setTracks", newTracks);
   }
 };
 

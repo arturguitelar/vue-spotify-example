@@ -1,9 +1,9 @@
 <template>
   <div class="card">
     <h3>{{ album.name }}</h3>
-    <img :src="album.images[0].url" />
+    <img :src="album.imageUrl" />
     <div class="info">
-      <p>Artista: {{ album.artists[0].name }}</p>
+      <p>Artista: {{ album.artist }}</p>
     </div>
   </div>
 </template>

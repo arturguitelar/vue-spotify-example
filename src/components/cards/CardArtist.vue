@@ -1,7 +1,7 @@
 <template>
   <div class="card">
     <h3>{{ artist.name }}</h3>
-    <img :src="artist.images[0].url" />
+    <img :src="artist.imageUrl" />
     <div class="info">
       <p>{{ artist.genres }}</p>
       <p>Popularidade: {{ artist.popularity }}</p>
