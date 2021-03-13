@@ -11,7 +11,7 @@
     <CardAlbum v-for="album in albums" :key="album.id" v-bind:album="album" />
   </section>
 
-  <section v-if="page == 'tracks'" class="cards-section">
+  <section v-if="page == 'tracks'" class="cards-section tracks">
     <CardTrack v-for="track in tracks" :key="track.id" v-bind:track="track" />
   </section>
 </template>
@@ -63,6 +63,10 @@ export default {
 
 .cards-section.albums {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.cards-section.tracks {
+  grid-template-columns: repeat(auto-fill, minmax(440px, 1fr));
 }
 
 /* CARDS - shared */

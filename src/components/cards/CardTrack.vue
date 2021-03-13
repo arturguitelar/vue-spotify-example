@@ -1,9 +1,9 @@
 <template>
-  <div class="card">
-    <h3>{{ track.name }}</h3>
+  <div class="card card-track">
     <img :src="track.imageUrl" />
     <div class="info">
-      <p>Artista: {{ track.artist }}</p>
+      <h3>{{ track.name }}</h3>
+      <p class="artist">{{ track.artist }}</p>
     </div>
   </div>
 </template>
@@ -16,3 +16,32 @@ export default {
   }
 };
 </script>
+
+<style>
+.card-track {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-track img {
+  max-width: 150px;
+}
+
+.card-track .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: auto;
+  padding: 10px;
+}
+
+.card-track .artist {
+  color: var(--gray-text);
+  font-style: italic;
+  font-size: 12px;
+  text-align: right;
+  border-top: var(--border-default);
+  margin-top: 10px;
+  padding-top: 10px;
+}
+</style>
