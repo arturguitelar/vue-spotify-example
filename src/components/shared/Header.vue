@@ -6,7 +6,7 @@
         <input
           class="search-input"
           type="text"
-          placeholder="Nome do artista..."
+          placeholder="Não funciona ainda. Calma..."
         />
         <button class="search-btn">O-</button>
       </div>

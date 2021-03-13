@@ -51,3 +51,25 @@ export default {
   }
 };
 </script>
+
+<style>
+/* CARD SECTION */
+.cards-section {
+  width: 100%;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+/* CARDS - shared */
+.card {
+  background-color: var(--secondary-color);
+  box-shadow: 6px 6px 3px 0px rgb(0 0 0 / 30%);
+  transition: 0.5s;
+}
+
+.card:hover {
+  box-shadow: 0 0 9px 3px var(--effect-color);
+  transform: translate(0, -5px);
+}
+</style>

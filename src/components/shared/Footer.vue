@@ -1,5 +1,3 @@
 <template>
-  <footer class="footer">
-    <button>Mais...</button>
-  </footer>
+  <footer class="footer"></footer>
 </template>

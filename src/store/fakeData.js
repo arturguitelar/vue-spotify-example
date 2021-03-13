@@ -810,7 +810,7 @@ export default {
           }
         ],
         name: "Mette Eks",
-        popularity: 37,
+        popularity: 29,
         type: "artist",
         uri: "spotify:artist:3k6gCxbXEb4C9UqGvv4s0X"
       }
