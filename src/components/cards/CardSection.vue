@@ -7,7 +7,7 @@
     />
   </section>
 
-  <section v-if="page == 'albums'" class="cards-section">
+  <section v-if="page == 'albums'" class="cards-section albums">
     <CardAlbum v-for="album in albums" :key="album.id" v-bind:album="album" />
   </section>
 
@@ -59,6 +59,10 @@ export default {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.cards-section.albums {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 
 /* CARDS - shared */

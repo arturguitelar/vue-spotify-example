@@ -1,5 +1,5 @@
 <template>
-  <div class="card card-artists">
+  <div class="card card-artist">
     <h3 class="name">{{ artist.name }}</h3>
     <img :src="artist.imageUrl" />
     <div class="info">
@@ -45,11 +45,11 @@ export default {
 </script>
 
 <style>
-.card-artists {
+.card-artist {
   display: flex;
   flex-direction: column;
 }
-.card-artists .name {
+.card-artist .name {
   position: absolute;
   background-color: var(--secondary-color);
   padding: 10px;
@@ -59,12 +59,12 @@ export default {
   font-variant-caps: all-small-caps;
 }
 
-.card-artists img {
+.card-artist img {
   width: 100%;
   height: auto;
 }
 
-.card-artists .info {
+.card-artist .info {
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -73,21 +73,21 @@ export default {
   line-height: 1.2rem;
 }
 
-.card-artists .genres {
+.card-artist .genres {
   color: var(--gray-text);
   font-style: italic;
   font-size: 12px;
   margin-bottom: 10px;
 }
 
-.card-artists .popularity {
+.card-artist .popularity {
   display: flex;
   justify-content: space-between;
   border-top: var(--border-default);
   padding-top: 10px;
 }
 
-.card-artists .popularity span {
+.card-artist .popularity span {
   font-variant: small-caps;
   padding: 6px;
   color: white;

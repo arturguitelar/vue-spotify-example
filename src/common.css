@@ -9,7 +9,7 @@
   --main-color: #2c2c2c;
   --secondary-color: #181818;
   --effect-color: rgb(17 138 46 / 80%);
-  --border-default: 1px solid #000;
+  --border-default: 1px solid rgb(19, 19, 19);
   --gray-text: rgb(169 169 169);
 }
 
