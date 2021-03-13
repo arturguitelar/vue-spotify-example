@@ -1,12 +1,34 @@
 <template>
   <nav class="filters">
     <ul>
-      <li><router-link class="active" to="/">Artista</router-link></li>
-      <li><router-link to="/albums">Album</router-link></li>
-      <li><router-link to="/tracks">Música</router-link></li>
+      <li>
+        <router-link :class="{ active: activeLink('/') }" to="/">
+          Artista
+        </router-link>
+      </li>
+      <li>
+        <router-link :class="{ active: activeLink('/albums') }" to="/albums">
+          Album
+        </router-link>
+      </li>
+      <li>
+        <router-link :class="{ active: activeLink('/tracks') }" to="/tracks">
+          Música
+        </router-link>
+      </li>
     </ul>
   </nav>
 </template>
+
+<script>
+export default {
+  methods: {
+    activeLink(link) {
+      return this.$route.path === link ? "active" : "";
+    }
+  }
+};
+</script>
 
 <style>
 .filters ul {
