@@ -1,11 +1,9 @@
 <template>
   <Header />
-  <main class="main">
-    <div class="container">
-      <h2>Álbums</h2>
-      <CardSection page="albums" />
-    </div>
-  </main>
+  <Main>
+    <h2>Álbums</h2>
+    <CardSection page="albums" />
+  </Main>
   <Footer />
 </template>
 
@@ -13,13 +11,15 @@
 import Header from "@/components/shared/Header";
 import Footer from "@/components/shared/Footer";
 import CardSection from "@/components/cards/CardSection";
+import Main from "@/components/shared/Main";
 
 export default {
   name: "Albums",
   components: {
     Header,
     Footer,
-    CardSection
+    CardSection,
+    Main
   }
 };
 </script>
