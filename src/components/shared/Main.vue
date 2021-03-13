@@ -10,6 +10,7 @@
 .main {
   margin-top: 200px;
   margin-bottom: 30px;
+  padding: 10px;
 }
 
 .main h2 {
