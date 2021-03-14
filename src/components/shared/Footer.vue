@@ -1,7 +1,6 @@
 <template>
   <footer class="footer">
     <div v-show="hasData" class="button-container">
-      <button disabled>Limpar pesquisa</button>
       <button disabled>Mais registros...</button>
     </div>
   </footer>
@@ -19,8 +18,11 @@ export default {
 
 <style scoped>
 .button-container {
-  width: 360px;
-  margin: 0 auto;
+  width: 100%;
+  margin: 10px auto;
+  padding-top: 10px;
+  text-align: center;
+  border-top: var(--border-default);
 }
 
 .button-container button {

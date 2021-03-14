@@ -39,6 +39,11 @@ const actions = {
     dispatch("createAlbums", fake.albums.items);
     dispatch("createTracks", fake.tracks.items);
   },
+  clearSearch({ commit }) {
+    commit("setArtists", []);
+    commit("setAlbums", []);
+    commit("setTracks", []);
+  },
   createArtists({ commit }, artists) {
     const newArtists = artists.map(artist => {
       return {
