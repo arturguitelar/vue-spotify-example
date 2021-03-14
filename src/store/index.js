@@ -1,6 +1,6 @@
 import { createStore } from "vuex";
 
-import search from "./modules/search";
+import search from "./search";
 
 export default createStore({
   state: {},

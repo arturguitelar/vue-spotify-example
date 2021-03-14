@@ -1,5 +1,4 @@
-// temporary
-import fake from "../fakeData";
+import api from "@/api/";
 
 const state = {
   artists: [],
@@ -33,11 +32,11 @@ const mutations = {
 
 const actions = {
   search({ dispatch }, query) {
-    console.log(`Query recebida: ${query}`);
+    const result = api.getData(query);
 
-    dispatch("createArtists", fake.artists.items);
-    dispatch("createAlbums", fake.albums.items);
-    dispatch("createTracks", fake.tracks.items);
+    dispatch("createArtists", result.artists.items);
+    dispatch("createAlbums", result.albums.items);
+    dispatch("createTracks", result.tracks.items);
   },
   clearSearch({ commit }) {
     commit("setArtists", []);
