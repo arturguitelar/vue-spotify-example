@@ -1,5 +1,8 @@
 <template>
-  <section v-if="page == 'artists'" class="cards-section">
+  <section
+    v-if="page == 'artists' && artists.length !== 0"
+    class="cards-section"
+  >
     <CardArtist
       v-for="artist in artists"
       :key="artist.id"
@@ -7,12 +10,22 @@
     />
   </section>
 
-  <section v-if="page == 'albums'" class="cards-section albums">
+  <section
+    v-else-if="page == 'albums' && albums.length !== 0"
+    class="cards-section albums"
+  >
     <CardAlbum v-for="album in albums" :key="album.id" v-bind:album="album" />
   </section>
 
-  <section v-if="page == 'tracks'" class="cards-section tracks">
+  <section
+    v-else-if="page == 'tracks' && tracks.length !== 0"
+    class="cards-section tracks"
+  >
     <CardTrack v-for="track in tracks" :key="track.id" v-bind:track="track" />
+  </section>
+
+  <section v-else>
+    <h3>Nenhuma busca aqui.</h3>
   </section>
 </template>
 

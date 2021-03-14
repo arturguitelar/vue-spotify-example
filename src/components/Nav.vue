@@ -8,7 +8,7 @@
       </li>
       <li>
         <router-link :class="{ active: activeLink('/albums') }" to="/albums">
-          Album
+          Álbum
         </router-link>
       </li>
       <li>

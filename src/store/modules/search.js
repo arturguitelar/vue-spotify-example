@@ -32,13 +32,18 @@ const mutations = {
 };
 
 const actions = {
-  getArtists({ commit }) {
-    const artists = fake.artists.items;
+  search({ dispatch }, query) {
+    console.log(`Query recebida: ${query}`);
 
+    dispatch("createArtists", fake.artists.items);
+    dispatch("createAlbums", fake.albums.items);
+    dispatch("createTracks", fake.tracks.items);
+  },
+  createArtists({ commit }, artists) {
     const newArtists = artists.map(artist => {
       return {
         name: artist.name,
-        imageUrl: artist.images[0].url,
+        imageUrl: artist.images[0]?.url,
         genres: artist.genres,
         popularity: artist.popularity
       };
@@ -46,27 +51,23 @@ const actions = {
 
     commit("setArtists", newArtists);
   },
-  getAlbums({ /*getters,*/ commit }) {
-    const albums = fake.albums.items;
-
+  createAlbums({ commit }, albums) {
     const newAlbums = albums.map(album => {
       return {
         name: album.name,
-        imageUrl: album.images[0].url,
-        artist: album.artists[0].name
+        imageUrl: album.images[0]?.url,
+        artist: album.artists[0]?.name
       };
     });
 
     commit("setAlbums", newAlbums);
   },
-  getTracks({ /*getters,*/ commit }) {
-    const tracks = fake.tracks.items;
-
+  createTracks({ commit }, tracks) {
     const newTracks = tracks.map(track => {
       return {
         name: track.name,
-        imageUrl: track.album.images[0].url,
-        artist: track.album.artists[0].name
+        imageUrl: track.album.images[0]?.url,
+        artist: track.album.artists[0]?.name
       };
     });
 

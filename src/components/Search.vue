@@ -1,34 +1,54 @@
 <template>
   <div class="search-container">
-    <div class="search">
-      <input
-        class="search-input"
-        type="text"
-        placeholder="Não funciona ainda. Calma..."
-      />
-      <button class="search-btn">
-        <svg
-          class="svg-icon search-icon"
-          aria-labelledby="title desc"
-          role="img"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 19.9 19.7"
-        >
-          <title id="title">Search Icon</title>
-          <desc id="desc">A magnifying glass icon.</desc>
-          <g class="search-path" fill="none" stroke="#000">
-            <path stroke-linecap="square" d="M19.5 19l-5.4-5.4" />
-            <circle cx="9" cy="9" r="7" />
-          </g>
-        </svg>
-      </button>
-    </div>
+    <form @submit.prevent="search">
+      <div class="search">
+        <input
+          class="search-input"
+          type="text"
+          placeholder="Não funciona ainda. Calma..."
+          v-model="searchInput"
+        />
+        <button type="submit" class="search-btn">
+          <svg
+            class="svg-icon search-icon"
+            aria-labelledby="title desc"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 19.9 19.7"
+          >
+            <title id="title">Search Icon</title>
+            <desc id="desc">A search icon.</desc>
+            <g class="search-path" fill="none" stroke="#000">
+              <path stroke-linecap="square" d="M19.5 19l-5.4-5.4" />
+              <circle cx="9" cy="9" r="7" />
+            </g>
+          </svg>
+        </button>
+      </div>
+    </form>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Search"
+  name: "Search",
+  data() {
+    return {
+      searchInput: ""
+    };
+  },
+  methods: {
+    search() {
+      this.searchInput = this.searchInput.trim();
+      if (this.isValidInput()) {
+        return;
+      }
+      this.$store.dispatch("search", this.searchInput);
+    },
+    isValidInput() {
+      return !this.searchInput;
+    }
+  }
 };
 </script>
 

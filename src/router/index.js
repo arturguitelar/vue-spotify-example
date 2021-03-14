@@ -1,5 +1,4 @@
 import { createRouter, createWebHashHistory } from "vue-router";
-import store from "@/store";
 import Artists from "../views/Artists";
 import Tracks from "../views/Tracks";
 import Albums from "../views/Albums";
@@ -10,7 +9,6 @@ const routes = [
     name: "Artists",
     component: Artists,
     beforeEnter(to, from, next) {
-      store.dispatch("getArtists");
       next();
     }
   },
@@ -19,7 +17,6 @@ const routes = [
     name: "Albums",
     component: Albums,
     beforeEnter(to, from, next) {
-      store.dispatch("getAlbums");
       next();
     }
   },
@@ -28,7 +25,6 @@ const routes = [
     name: "Tracks",
     component: Tracks,
     beforeEnter(to, from, next) {
-      store.dispatch("getTracks");
       next();
     }
   }
