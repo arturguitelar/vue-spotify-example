@@ -5,7 +5,11 @@
       <h3>Login</h3>
       <button class="button-default" @click="login">Entrar</button>
     </div>
-    <p style="margin: 20px auto">Tela de autenticação.</p>
+    <p>
+      obs: Ainda não faz autenticação "de verdade". Clicar em login dá acesso
+      true para as rotas. Na próxima tela, digite algo na barra de busca e,
+      apertando Enter ou clicando na lupa, o app deve trazer uma lista fake.
+    </p>
   </div>
 </template>
 
@@ -40,5 +44,10 @@ export default {
   border: var(--border-default);
   padding: 10px;
   text-align: center;
+}
+
+.login-container p {
+  margin: 20px auto;
+  max-width: 600px;
 }
 </style>
