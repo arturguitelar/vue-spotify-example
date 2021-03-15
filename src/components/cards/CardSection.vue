@@ -79,7 +79,7 @@ export default {
 }
 
 .cards-section.tracks {
-  grid-template-columns: repeat(auto-fill, minmax(440px, 1fr));
+  grid-template-columns: 1fr 1fr;
 }
 
 /* CARDS - shared */
@@ -92,5 +92,11 @@ export default {
 .card:hover {
   box-shadow: 0 0 9px 3px var(--effect-color);
   transform: translate(0, -5px);
+}
+
+@media screen and (max-width: 680px) {
+  .cards-section.tracks {
+    grid-template-columns: 1fr;
+  }
 }
 </style>

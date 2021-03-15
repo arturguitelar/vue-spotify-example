@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <div class="container">
-      <h1>Searchify Music</h1>
+      <h1 class="title">Searchify Music</h1>
       <Search />
       <Nav />
     </div>
@@ -30,5 +30,11 @@ export default {
   z-index: 10;
   box-shadow: 0px 6px 3px 0px rgb(0 0 0 / 30%);
   border-bottom: var(--border-default);
+}
+
+@media screen and (max-width: 420px) {
+  .header h1 {
+    font-size: 18px;
+  }
 }
 </style>

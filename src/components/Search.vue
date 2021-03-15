@@ -81,8 +81,7 @@ export default {
 }
 
 .search {
-  width: 350px;
-  height: 40px;
+  width: 320px;
   display: flex;
   flex-direction: row;
   margin: auto;
@@ -90,6 +89,7 @@ export default {
 }
 
 .search-input {
+  min-width: 100px;
   padding: 10px;
   flex: auto;
   border-radius: 0;
@@ -100,6 +100,7 @@ export default {
 
 .search-btn {
   width: 40px;
+  height: 40px;
   padding: 10px;
   border-radius: 0;
   background: transparent;
