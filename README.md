@@ -6,11 +6,11 @@ An example of application with Vue.js and Spotify API.
 
 ## App images
 
-[Artists](docs/exemplo-01.png)
+![alt Artists](docs/exemplo-01.png)
 
-[Albums](docs/exemplo-02.png)
+![alt Albums](docs/exemplo-02.png)
 
-[Tracks](docs/exemplo-03.png)
+![alt Tracks](docs/exemplo-03.png)
 
 ## Project setup (vue basics)
 
