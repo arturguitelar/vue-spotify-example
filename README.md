@@ -4,6 +4,14 @@ An example of application with Vue.js and Spotify API.
 
 ## Project for study purposes. In progress...
 
+## App images
+
+[Artists](docs/exemplo-01.png)
+
+[Albums](docs/exemplo-02.png)
+
+[Tracks](docs/exemplo-03.png)
+
 ## Project setup (vue basics)
 
 ```
