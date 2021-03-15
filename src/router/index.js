@@ -1,6 +1,6 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import store from "../store";
-import Auth from "../views/Auth";
+import Login from "../views/Login";
 import Artists from "../views/Artists";
 import Tracks from "../views/Tracks";
 import Albums from "../views/Albums";
@@ -20,8 +20,8 @@ const routes = [
   },
   {
     path: "/auth",
-    name: "Auth",
-    component: Auth,
+    name: "Login",
+    component: Login,
     beforeEnter(to, from, next) {
       if (store.getters.isAuthenticated) {
         next("/");
@@ -58,8 +58,7 @@ const routes = [
   // otherwise redirect to auth
   {
     path: "/:catchAll(.*)",
-    name: "Auth",
-    component: Auth
+    component: Login
   }
 ];
 
