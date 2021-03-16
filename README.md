@@ -1,8 +1,13 @@
-# vue-spotify-example
+# vue-spotify-example - WIP
 
 An example of application with Vue.js and Spotify API.
 
 ## Project for study purposes. In progress...
+
+### [demo](https://arturguitelar.github.io/vue-spotify-example/)
+- Click in "login" to validate routes.
+- Search for fake data. *need to fill search input with something*
+- **known bug** - Search field doesn't persist data between pages. 
 
 ## App images
 
