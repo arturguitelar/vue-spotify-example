@@ -1,10 +1,13 @@
 <template>
-  <div class="card card-track">
+  <div v-if="track" class="card card-track">
     <img :src="track.imageUrl" />
     <div class="info">
       <h3>{{ track.name }}</h3>
       <p class="artist">{{ track.artist }}</p>
     </div>
+  </div>
+  <div v-else class="message">
+    <p>Dados inválidos</p>
   </div>
 </template>
 

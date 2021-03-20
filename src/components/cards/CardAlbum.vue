@@ -1,10 +1,13 @@
 <template>
-  <div class="card card-album">
-    <img :src="album.imageUrl" />
+  <div v-if="album" class="card card-album">
+    <img :src="album.imageUrl || 'https://via.placeholder.com/500'" />
     <div class="info">
       <h3 class="name">{{ album.name }}</h3>
       <p class="artist">{{ album.artist }}</p>
     </div>
+  </div>
+  <div v-else class="message">
+    <p>Dados inválidos</p>
   </div>
 </template>
 

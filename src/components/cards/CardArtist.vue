@@ -10,7 +10,7 @@
       </p>
     </div>
   </div>
-  <div v-else>
+  <div v-else class="message">
     <p>Dados inválidos</p>
   </div>
 </template>

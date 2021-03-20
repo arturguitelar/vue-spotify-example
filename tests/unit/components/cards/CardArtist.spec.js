@@ -6,8 +6,9 @@ describe("#CardArtist", () => {
     test("render invalid data if doesn't receive an artist object", () => {
       const wrapper = shallowMount(CardArtist);
 
-      const message = wrapper.get("p");
+      const message = wrapper.get(".message");
 
+      expect(wrapper.find(".card").exists()).toBe(false);
       expect(message.text()).toBe("Dados inválidos");
     });
 
@@ -51,6 +52,8 @@ describe("#CardArtist", () => {
     test("create a card with correct data", () => {
       expect(wrapper.vm.artist).toStrictEqual(defaultData);
       expect(wrapper.props()).toEqual({ artist: defaultData });
+      expect(wrapper.find(".card").exists()).toBe(true);
+      expect(wrapper.find(".message").exists()).toBe(false);
     });
 
     test("get a string of genres to render in genres", () => {
