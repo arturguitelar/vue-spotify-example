@@ -8,6 +8,7 @@
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
     "test:unit:w": "vue-cli-service test:unit --watch",
+    "test:unit:c": "vue-cli-service test:unit --coverage",
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {

@@ -10,6 +10,22 @@ describe("#CardArtist", () => {
 
       expect(message.text()).toBe("Dados inválidos");
     });
+
+    test("render message if artist has no genres", () => {
+      const wrapper = shallowMount(CardArtist, {
+        props: {
+          artist: {
+            name: "Some Artist",
+            imageUrl: "https://via.placeholder.com/500",
+            genres: [],
+            popularity: 50
+          }
+        }
+      });
+
+      expect(wrapper.vm.getGenres()).toStrictEqual("sem categoria");
+      expect(wrapper.find(".genres").text()).toBe("sem categoria");
+    });
   });
 
   describe("#SUCCESS", () => {

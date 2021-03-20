@@ -47,6 +47,12 @@ npm run test:unit
 npm run test:unit:w
 ```
 
+### Run your unit tests with jest coverage
+
+```
+npm run test:unit:c
+```
+
 ### Lints and fixes files
 
 ```

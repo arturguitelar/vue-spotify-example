@@ -1,7 +1,7 @@
 <template>
   <div v-if="artist" class="card card-artist">
     <h3 class="name">{{ artist.name }}</h3>
-    <img :src="artist.imageUrl" />
+    <img :src="artist.imageUrl || 'https://via.placeholder.com/500'" />
     <div class="info">
       <p class="genres">{{ getGenres() }}</p>
       <p class="popularity">
