@@ -1,14 +1,17 @@
 <template>
-  <div class="card card-artist">
+  <div v-if="artist" class="card card-artist">
     <h3 class="name">{{ artist.name }}</h3>
     <img :src="artist.imageUrl" />
     <div class="info">
       <p class="genres">{{ getGenres() }}</p>
       <p class="popularity">
         Popularidade: {{ artist.popularity }}
-        <span :class="badge">{{ badge }}</span>
+        <span :class="getBadge()">{{ getBadge() }}</span>
       </p>
     </div>
+  </div>
+  <div v-else>
+    <p>Dados inválidos</p>
   </div>
 </template>
 
@@ -24,10 +27,8 @@ export default {
         return "sem categoria";
       }
       return this.artist.genres.join(" - ");
-    }
-  },
-  computed: {
-    badge() {
+    },
+    getBadge() {
       const popularity = this.artist.popularity;
 
       if (popularity >= 80) {
@@ -38,7 +39,7 @@ export default {
         return "ok";
       }
 
-      return "undergrownd";
+      return "underground";
     }
   }
 };
@@ -49,6 +50,7 @@ export default {
   display: flex;
   flex-direction: column;
 }
+
 .card-artist .name {
   position: absolute;
   background-color: var(--secondary-color);
