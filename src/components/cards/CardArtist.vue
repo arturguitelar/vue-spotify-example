@@ -1,5 +1,5 @@
 <template>
-  <div v-if="artist" class="card card-artist">
+  <div v-if="artist" data-card="artist" class="card card-artist">
     <h3 class="name">{{ artist.name }}</h3>
     <img :src="artist.imageUrl || 'https://via.placeholder.com/500'" />
     <div class="info">
@@ -10,7 +10,7 @@
       </p>
     </div>
   </div>
-  <div v-else class="message">
+  <div v-else data-card-message="empty">
     <p>Dados inválidos</p>
   </div>
 </template>

@@ -1,12 +1,12 @@
 <template>
-  <div v-if="album" class="card card-album">
+  <div v-if="album" data-card="album" class="card card-album">
     <img :src="album.imageUrl || 'https://via.placeholder.com/500'" />
     <div class="info">
       <h3 class="name">{{ album.name }}</h3>
       <p class="artist">{{ album.artist }}</p>
     </div>
   </div>
-  <div v-else class="message">
+  <div v-else data-card-message="empty">
     <p>Dados inválidos</p>
   </div>
 </template>

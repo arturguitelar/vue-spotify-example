@@ -1,15 +1,22 @@
 import { shallowMount } from "@vue/test-utils";
 import CardArtist from "@/components/cards/CardArtist.vue";
 
+const DATASET_CARD = "[data-card='artist']";
+const DATASET_MESSAGE = "[data-card-message='empty']";
+const IMAGE_URL = "https://via.placeholder.com/500";
+const messages = {
+  INVALID_DATA: "Dados inválidos",
+  NO_CATEGORY: "sem categoria"
+};
+
 describe("#CardArtist", () => {
   describe("#FAIL", () => {
     test("render invalid data if doesn't receive an artist object", () => {
       const wrapper = shallowMount(CardArtist);
 
-      const message = wrapper.get(".message");
-
-      expect(wrapper.find(".card").exists()).toBe(false);
-      expect(message.text()).toBe("Dados inválidos");
+      expect(wrapper.find(DATASET_CARD).exists()).toBe(false);
+      expect(wrapper.find(DATASET_MESSAGE).exists()).toBe(true);
+      expect(wrapper.text()).toBe(messages.INVALID_DATA);
     });
 
     test("render message if artist has no genres", () => {
@@ -17,22 +24,22 @@ describe("#CardArtist", () => {
         props: {
           artist: {
             name: "Some Artist",
-            imageUrl: "https://via.placeholder.com/500",
+            imageUrl: IMAGE_URL,
             genres: [],
             popularity: 50
           }
         }
       });
 
-      expect(wrapper.vm.getGenres()).toStrictEqual("sem categoria");
-      expect(wrapper.find(".genres").text()).toBe("sem categoria");
+      expect(wrapper.vm.getGenres()).toStrictEqual(messages.NO_CATEGORY);
+      expect(wrapper.html()).toContain(messages.NO_CATEGORY);
     });
   });
 
   describe("#SUCCESS", () => {
     const defaultData = {
       name: "Some Artist",
-      imageUrl: "https://via.placeholder.com/500",
+      imageUrl: IMAGE_URL,
       genres: ["Some", "Genres", "Here"],
       popularity: 50
     };
@@ -52,15 +59,27 @@ describe("#CardArtist", () => {
     test("create a card with correct data", () => {
       expect(wrapper.vm.artist).toStrictEqual(defaultData);
       expect(wrapper.props()).toEqual({ artist: defaultData });
-      expect(wrapper.find(".card").exists()).toBe(true);
-      expect(wrapper.find(".message").exists()).toBe(false);
+      expect(wrapper.find(DATASET_CARD).exists()).toBe(true);
+      expect(wrapper.find(DATASET_MESSAGE).exists()).toBe(false);
     });
 
     test("get a string of genres to render in genres", () => {
       const expectedFormat = "Some - Genres - Here";
 
       expect(wrapper.vm.getGenres()).toStrictEqual(expectedFormat);
-      expect(wrapper.find(".genres").text()).toBe(expectedFormat);
+      expect(wrapper.text()).toContain(expectedFormat);
+    });
+
+    test("image should be placed by placeholder if no image url", () => {
+      defaultData.imageUrl = "";
+
+      wrapper = shallowMount(CardArtist, {
+        props: { artist: defaultData }
+      });
+
+      expect(wrapper.find("img").attributes()).toEqual({
+        src: IMAGE_URL
+      });
     });
 
     test("badge score should be 'hot' if artist popularity >= 80", () => {
@@ -86,8 +105,8 @@ describe("#CardArtist", () => {
         props: { artist: defaultData }
       });
 
-      expect(wrapper.find(".popularity span").classes()).toContain(badge);
-      expect(wrapper.find(".popularity span").text()).toBe(badge);
+      expect(wrapper.find("span").classes()).toContain(badge);
+      expect(wrapper.find("span").text()).toBe(badge);
     }
   });
 });
