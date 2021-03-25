@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`#CardArtist #SUCCESS Snapshots should render a card correctly 1`] = `
+<div
+  class="card card-artist"
+  data-card="artist"
+>
+  <h3
+    class="name"
+  >
+    Some Artist
+  </h3>
+  <img
+    src="https://via.placeholder.com/500"
+  />
+  <div
+    class="info"
+  >
+    <p
+      class="genres"
+    >
+      Some - Genres - Here
+    </p>
+    <p
+      class="popularity"
+    >
+       Popularidade: 29 
+      <span
+        class="underground"
+      >
+        underground
+      </span>
+    </p>
+  </div>
+</div>
+`;

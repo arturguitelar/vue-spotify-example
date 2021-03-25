@@ -54,5 +54,11 @@ describe("#CardTrack", () => {
         src: IMAGE_URL
       });
     });
+
+    describe("Snapshots", () => {
+      test("should render a card correctly", () => {
+        expect(wrapper.wrapperElement).toMatchSnapshot();
+      });
+    });
   });
 });

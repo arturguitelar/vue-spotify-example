@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`#CardTrack #SUCCESS Snapshots should render a card correctly 1`] = `
+<div
+  class="card card-track"
+  data-card="track"
+>
+  <img
+    src="https://via.placeholder.com/300"
+  />
+  <div
+    class="info"
+  >
+    <h3>
+      Track name
+    </h3>
+    <p
+      class="artist"
+    >
+      Artist name
+    </p>
+  </div>
+</div>
+`;

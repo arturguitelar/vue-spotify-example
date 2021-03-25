@@ -108,5 +108,11 @@ describe("#CardArtist", () => {
       expect(wrapper.find("span").classes()).toContain(badge);
       expect(wrapper.find("span").text()).toBe(badge);
     }
+
+    describe("Snapshots", () => {
+      test("should render a card correctly", () => {
+        expect(wrapper.wrapperElement).toMatchSnapshot();
+      });
+    });
   });
 });
