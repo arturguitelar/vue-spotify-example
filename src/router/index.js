@@ -1,64 +1,35 @@
 import { createRouter, createWebHashHistory } from "vue-router";
-import store from "../store";
-import Login from "../views/Login";
-import Artists from "../views/Artists";
-import Tracks from "../views/Tracks";
-import Albums from "../views/Albums";
+import Login from "@/views/Login";
+import Artists from "@/views/Artists";
+import Tracks from "@/views/Tracks";
+import Albums from "@/views/Albums";
 
 const routes = [
   {
     path: "/",
     name: "Artists",
-    component: Artists,
-    beforeEnter(to, from, next) {
-      if (store.getters.isAuthenticated) {
-        next();
-      } else {
-        next("/auth");
-      }
-    }
+    component: Artists
   },
   {
-    path: "/auth",
+    path: "/login",
     name: "Login",
-    component: Login,
-    beforeEnter(to, from, next) {
-      if (store.getters.isAuthenticated) {
-        next("/");
-      } else {
-        next();
-      }
-    }
+    component: Login
   },
   {
     path: "/albums",
     name: "Albums",
-    component: Albums,
-    beforeEnter(to, from, next) {
-      if (store.getters.isAuthenticated) {
-        next();
-      } else {
-        next("/auth");
-      }
-    }
+    component: Albums
   },
   {
     path: "/tracks",
     name: "Tracks",
-    component: Tracks,
-    beforeEnter(to, from, next) {
-      if (store.getters.isAuthenticated) {
-        next();
-      } else {
-        next("/auth");
-      }
-    }
+    component: Tracks
   },
 
-  // otherwise redirect to auth
+  // otherwise redirect to Home (Artists)
   {
     path: "/:catchAll(.*)",
-    component: Login
+    component: Artists
   }
 ];
 
