@@ -9,7 +9,7 @@ import Footer from "@/components/shared/Footer";
 import CardSection from "@/components/cards/CardSection";
 import Main from "@/components/shared/Main";
 
-const viewHeaders = {
+const headerText = {
   ARTIST: "Artistas",
   ALBUM: "Álbums",
   TRACK: "Músicas"
@@ -48,32 +48,24 @@ describe("App", () => {
   });
 
   test("Renders Artists view from '/' route", async () => {
-    router.push("/");
-    await router.isReady();
-
-    const header = wrapper.get("h2");
-
-    expect(wrapper.findAllComponents(basicComponents)).toBeTruthy();
-    expect(header.text()).toBe(viewHeaders.ARTIST);
+    await checkViewRender("/", headerText.ARTIST);
   });
 
   test("Renders Albums view from '/albums' route", async () => {
-    router.push("/albums");
-    await router.isReady();
-
-    const header = wrapper.get("h2");
-
-    expect(wrapper.findAllComponents(basicComponents)).toBeTruthy();
-    expect(header.text()).toBe(viewHeaders.ALBUM);
+    await checkViewRender("/albums", headerText.ALBUM);
   });
 
   test("Renders Tracks view from '/tracks' route", async () => {
-    router.push("/tracks");
+    await checkViewRender("/tracks", headerText.TRACK);
+  });
+
+  async function checkViewRender(route, headerText) {
+    router.push(route);
     await router.isReady();
 
     const header = wrapper.get("h2");
 
     expect(wrapper.findAllComponents(basicComponents)).toBeTruthy();
-    expect(header.text()).toBe(viewHeaders.TRACK);
-  });
+    expect(header.text()).toBe(headerText);
+  }
 });
