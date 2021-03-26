@@ -1,5 +1,5 @@
 import { createRouter, createMemoryHistory } from "vue-router";
-import { createStore } from 'vuex';
+import { createStore } from "vuex";
 import { mount } from "@vue/test-utils";
 import routes from "@/router/routes.js";
 import searchStore from "@/store/modules/search.js";

@@ -1,6 +1,7 @@
 <template>
   <section
     v-if="page == 'artists' && artists.length !== 0"
+    data-test="artists"
     class="cards-section"
   >
     <CardArtist
@@ -11,20 +12,22 @@
   </section>
 
   <section
-    v-else-if="page == 'albums' && albums.length !== 0"
+    v-else-if="page === 'albums' && albums.length !== 0"
+    data-test="albums"
     class="cards-section albums"
   >
     <CardAlbum v-for="album in albums" :key="album.id" v-bind:album="album" />
   </section>
 
   <section
-    v-else-if="page == 'tracks' && tracks.length !== 0"
+    v-else-if="page === 'tracks' && tracks.length !== 0"
+    data-test="tracks"
     class="cards-section tracks"
   >
     <CardTrack v-for="track in tracks" :key="track.id" v-bind:track="track" />
   </section>
 
-  <section v-else>
+  <section v-show="!page || page === ''">
     <h3>Nenhuma busca aqui.</h3>
   </section>
 </template>
@@ -41,15 +44,10 @@ export default {
     CardAlbum,
     CardTrack
   },
-  data() {
-    return {
-      defaultPage: "artists"
-    };
-  },
   props: {
     // artists - albums - tracks
     page: String,
-    default: () => "artists"
+    default: () => ""
   },
   computed: {
     artists() {
