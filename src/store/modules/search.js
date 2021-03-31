@@ -1,12 +1,16 @@
 import api from "@/api/";
 
 const state = {
+  searchInput: "",
   artists: [],
   albums: [],
   tracks: []
 };
 
 const getters = {
+  getSearchInput(state) {
+    return state.searchInput;
+  },
   getArtists(state) {
     return state.artists;
   },

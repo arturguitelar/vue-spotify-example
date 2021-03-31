@@ -2,7 +2,7 @@ import { createRouter, createMemoryHistory } from "vue-router";
 import { createStore } from "vuex";
 import { mount } from "@vue/test-utils";
 import routes from "@/router/routes.js";
-import searchStore from "@/store/modules/search.js";
+import searchModule from "@/store/modules/search.js";
 import App from "@/App.vue";
 import Header from "@/components/shared/Header";
 import Footer from "@/components/shared/Footer";
@@ -25,7 +25,7 @@ describe("App", () => {
   beforeAll(() => {
     store = createStore({
       modules: {
-        searchStore
+        searchModule
       }
     });
 

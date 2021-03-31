@@ -2,18 +2,17 @@
   <header class="header">
     <div class="container">
       <h1 class="title">Searchify Music</h1>
-      <Search />
+      <slot />
       <Nav />
     </div>
   </header>
 </template>
 
 <script>
-import Search from "../Search.vue";
 import Nav from "../Nav.vue";
 
 export default {
-  components: { Search, Nav },
+  components: { Nav },
   name: "Header"
 };
 </script>

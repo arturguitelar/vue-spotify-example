@@ -24,7 +24,7 @@
           <line x1="12" y1="9" x2="18" y2="15"></line>
         </svg>
       </button>
-      <button type="submit" class="search-btn" @click="search">
+      <button class="search-btn" @click="search">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -51,6 +51,11 @@ export default {
       searchInput: ""
     };
   },
+  props: {
+    getData: {
+      type: Function
+    }
+  },
   computed: {
     hasData() {
       return this.searchInput !== "";
@@ -62,7 +67,7 @@ export default {
       if (this.isValidInput()) {
         return;
       }
-      this.$store.dispatch("search", this.searchInput);
+      this.getData(this.searchInput);
     },
     clearSearch() {
       this.searchInput = "";
