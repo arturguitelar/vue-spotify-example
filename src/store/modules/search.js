@@ -23,6 +23,9 @@ const getters = {
 };
 
 const mutations = {
+  setSearchInput(state, data) {
+    state.searchInput = data;
+  },
   setArtists(state, data) {
     state.artists = data;
   },
@@ -37,12 +40,17 @@ const mutations = {
 const actions = {
   search({ dispatch }, query) {
     const result = api.getData(query);
-
-    dispatch("createArtists", result.artists.items);
     dispatch("createAlbums", result.albums.items);
     dispatch("createTracks", result.tracks.items);
   },
+  getArtists({ commit, dispatch }, query) {
+    const result = api.getData(query);
+
+    dispatch("createArtists", result.artists.items);
+    commit("setSearchInput", query);
+  },
   clearSearch({ commit }) {
+    commit("setSearchInput", "");
     commit("setArtists", []);
     commit("setAlbums", []);
     commit("setTracks", []);

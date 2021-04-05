@@ -27,7 +27,7 @@ export default {
   },
   methods: {
     getArtists(query) {
-      this.$store.dispatch("search", query);
+      this.$store.dispatch("getArtists", query);
     }
   }
 };

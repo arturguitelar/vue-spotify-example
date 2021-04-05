@@ -8,7 +8,12 @@
         v-model="searchInput"
         @keyup.enter="search"
       />
-      <button v-show="hasData" class="search-btn" @click="clearSearch">
+      <button
+        v-show="hasData"
+        data-test="clear-btn"
+        class="search-btn"
+        @click="clearSearch"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -24,7 +29,7 @@
           <line x1="12" y1="9" x2="18" y2="15"></line>
         </svg>
       </button>
-      <button class="search-btn" @click="search">
+      <button data-test="search-btn" class="search-btn" @click="search">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -48,7 +53,7 @@ export default {
   name: "Search",
   data() {
     return {
-      searchInput: ""
+      searchInput: this.$store.getters.getSearchInput || ""
     };
   },
   props: {
