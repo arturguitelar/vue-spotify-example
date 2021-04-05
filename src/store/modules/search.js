@@ -38,22 +38,29 @@ const mutations = {
 };
 
 const actions = {
-  search({ dispatch }, query) {
-    const result = api.getData(query);
-    dispatch("createAlbums", result.albums.items);
-    dispatch("createTracks", result.tracks.items);
-  },
-  getArtists({ commit, dispatch }, query) {
-    const result = api.getData(query);
-
-    dispatch("createArtists", result.artists.items);
-    commit("setSearchInput", query);
-  },
   clearSearch({ commit }) {
     commit("setSearchInput", "");
     commit("setArtists", []);
     commit("setAlbums", []);
     commit("setTracks", []);
+  },
+  getArtists({ commit, dispatch }, query) {
+    const result = api.getData(query);
+
+    commit("setSearchInput", query);
+    dispatch("createArtists", result.artists.items);
+  },
+  getAlbums({ commit, dispatch }, query) {
+    const result = api.getData(query);
+
+    commit("setSearchInput", query);
+    dispatch("createAlbums", result.albums.items);
+  },
+  getTracks({ commit, dispatch }, query) {
+    const result = api.getData(query);
+
+    commit("setSearchInput", query);
+    dispatch("createTracks", result.tracks.items);
   },
   createArtists({ commit }, artists) {
     const newArtists = artists.map(artist => {

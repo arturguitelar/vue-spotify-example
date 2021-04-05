@@ -27,7 +27,7 @@ export default {
   },
   methods: {
     getAlbums(query) {
-      this.$store.dispatch("search", query);
+      this.$store.dispatch("getAlbums", query);
     }
   }
 };

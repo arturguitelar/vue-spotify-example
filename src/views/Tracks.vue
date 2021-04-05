@@ -27,7 +27,7 @@ export default {
   },
   methods: {
     getTracks(query) {
-      this.$store.dispatch("search", query);
+      this.$store.dispatch("getTracks", query);
     }
   }
 };
