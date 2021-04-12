@@ -1,4 +1,4 @@
-import api from "@/api/";
+import searchService from "@/services/searchService";
 
 const state = {
   searchInput: "",
@@ -44,20 +44,19 @@ const actions = {
     commit("setAlbums", []);
     commit("setTracks", []);
   },
-  getArtists({ commit, dispatch }, query) {
-    const result = api.getData(query);
-
+  async getArtists({ commit, dispatch }, query) {
+    const result = await searchService.getArtists(query);
     commit("setSearchInput", query);
     dispatch("createArtists", result.artists.items);
   },
-  getAlbums({ commit, dispatch }, query) {
-    const result = api.getData(query);
+  async getAlbums({ commit, dispatch }, query) {
+    const result = await searchService.getAlbums(query);
 
     commit("setSearchInput", query);
     dispatch("createAlbums", result.albums.items);
   },
-  getTracks({ commit, dispatch }, query) {
-    const result = api.getData(query);
+  async getTracks({ commit, dispatch }, query) {
+    const result = await searchService.getTracks(query);
 
     commit("setSearchInput", query);
     dispatch("createTracks", result.tracks.items);
